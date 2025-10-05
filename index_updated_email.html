@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gift Navigator – The Smarter Way to Give</title>
+  <meta name="description" content="Gift Navigator helps you plan, organize, and personalize every gift—complete with AI-powered recommendations, budgets, and event reminders.">
+  <meta property="og:title" content="Gift Navigator – The Smarter Way to Give">
+  <meta property="og:description" content="Plan, organize, and personalize every gift with AI-powered recommendations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' ry='16' fill='%23000'/><text x='50' y='58' text-anchor='middle' font-size='56' fill='%23fff' font-family='Arial, Helvetica, sans-serif'>🎁</text></svg>">
+  <style>
+    :root{
+      --bg:#0f1320;
+      --card:#151a2b;
+      --text:#e7ebf3;
+      --muted:#a9b0c2;
+      --accent:#6ee7ff;
+      --accent-2:#a6ffcb;
+      --border:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0b0e17 60%);color:var(--text);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;line-height:1.5}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--border)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow);font-size:22px}
+    nav a{margin:0 10px;color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--text);backdrop-filter:blur(6px)}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0f1a;border:none;box-shadow:var(--shadow);font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid var(--border)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 22px}
+    .panel{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    .phone{aspect-ratio:9/19;border-radius:28px;border:1px solid var(--border);background:radial-gradient(1200px 600px at 10% -10%, rgba(174,255,214,.2), transparent 40%), #0b0f1c;display:flex;align-items:center;justify-content:center;font-size:42px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{border:1px solid var(--border);border-radius:14px;padding:16px;background:rgba(255,255,255,.03)}
+    .feature h3{margin:8px 0 6px}
+    .muted{color:var(--muted)}
+    .section{padding:52px 0}
+    .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .badge{border:1px dashed var(--border);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--muted)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    footer{padding:28px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    .disclosure{font-size:13px;color:var(--muted);margin-top:8px}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🎁</div>
+        <strong>Gift Navigator</strong>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div>
+        <a class="btn ghost" href="#beta">Join the beta</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Gift Navigator – The Smarter Way to Give</h1>
+        <p>Never forget a special occasion again. Plan, organize, and personalize every gift — with AI-powered recommendations, budgets, and event reminders for family, friends, and clients.</p>
+        <div class="badges">
+          <a class="btn primary" href="#beta">Join the beta</a>
+          <span class="badge">App Store • Coming Soon</span>
+          <span class="badge">Google Play • Coming Soon</span>
+        </div>
+        <p class="disclosure">Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
+      </div>
+      <div class="panel">
+        <div class="phone" aria-label="App preview">📱</div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Key Features</h2>
+      <div class="features" role="list">
+        <div class="feature" role="listitem">
+          <strong>Track every occasion</strong>
+          <p class="muted">Built-in calendars for Christmas, Mother’s Day, Father’s Day, birthdays, anniversaries—or create custom events.</p>
+        </div>
+        <div class="feature" role="listitem">
+          <strong>Personal &amp; Business lists</strong>
+          <p class="muted">Keep work and family separate with dedicated lists and budgets for each context.</p>
+        </div>
+        <div class="feature" role="listitem">
+          <strong>AI gift suggestions</strong>
+          <p class="muted">Recommendations tailored to interests, history, and budget—linked to retailers you trust.</p>
+        </div>
+        <div class="feature" role="listitem">
+          <strong>Gift history</strong>
+          <p class="muted">Avoid repeats. See what you’ve given before and what worked well.</p>
+        </div>
+        <div class="feature" role="listitem">
+          <strong>Budgets &amp; spend tracking</strong>
+          <p class="muted">Plan by event and monitor totals across the season.</p>
+        </div>
+        <div class="feature" role="listitem">
+          <strong>Simple, elegant UI</strong>
+          <p class="muted">Clean structure, fast workflows, and thoughtful defaults.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section grid-2">
+      <div class="panel">
+        <h2>How it works</h2>
+        <ol>
+          <li><strong>Create recipients.</strong> Add people or clients with interests and sizes.</li>
+          <li><strong>Pick an event.</strong> Set dates, budgets, and reminders.</li>
+          <li><strong>Browse ideas.</strong> Get AI-powered suggestions with affiliate links.</li>
+          <li><strong>Track and wrap.</strong> Log purchases, status, and thank-you notes.</li>
+        </ol>
+        <p class="muted">Affiliate links may earn small commissions that support development at no extra cost to you.</p>
+      </div>
+      <div class="panel">
+        <h2>For Amazon Associates Review</h2>
+        <p class="muted">This page represents the public-facing web presence for Gift Navigator while the mobile apps are in beta. Affiliate links will appear inside the app’s recommendation screens and on relevant content pages like guides and gift lists.</p>
+        <ul class="muted">
+          <li>Property type: Mobile app (iOS &amp; Android)</li>
+          <li>Traffic channels: SEO, content marketing, email, and app store discovery</li>
+          <li>Monetization: Amazon Associates affiliate links compliant with disclosure</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="beta" class="section panel">
+      <style>#beta.panel{padding-left:40px;padding-right:40px;}</style>
+      <h2>Join the Beta</h2>
+      <p>Interested in early access? Enter your email below and we’ll invite you when testing opens.</p>
+      <form action="https://example.com/submit" method="post" onsubmit="alert('Thanks! This is a placeholder form. Replace with your email provider or static form service.'); return false;">
+        <label for="email" class="muted">Email</label><br>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required style="margin:8px 0 12px; padding:12px 14px; width:100%; border-radius:12px; border:1px solid var(--border); background:#0c111b; color:var(--text)">
+        <button class="btn primary" type="submit">Request Invite</button>
+      </form>
+      <p class="disclosure">We respect your privacy. No spam. Unsubscribe anytime.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Questions?</h3>
+          <p class="muted">Contact us at <a href="mailto:davlocklair@gmail.com">davlocklair@gmail.com</a></p>
+          <p class="muted">Media kit and screenshots available upon request.</p>
+        </div>
+        <div class="panel">
+          <h3>Compliance</h3>
+          <ul class="muted">
+            <li>Amazon Associates Disclosure present wherever affiliate links appear.</li>
+            <li>Operating Agreement and Program Policies observed.</li>
+            <li>Privacy Policy &amp; Terms links can be added when live.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Gift Navigator. All rights reserved.</div>
+      <div class="disclosure">As an Amazon Associate, we earn from qualifying purchases.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
